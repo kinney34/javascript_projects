@@ -1,0 +1,21 @@
+body {
+  background-color: whitesmoke;
+}
+
+h1 {
+  text-align: center;
+  color: midnightblue;
+  text-decoration: underline;
+}
+
+ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+li a {
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: midnightblue;
+}

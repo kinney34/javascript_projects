@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  background-color: #ffa600;
+}
+
+.container {
+  color: #fff;
+  background-color: #ffa600;
+  display: inline-block;
+  width: 100px;
+}
+
+h1, span, p {
+  font-family: "HelveticaNeue-Light", "Helvetica Neue Light", Helvetica, Arial;
+  color: #fff;
+}
+
+button {
+  background-color: #ffa600;
+  color: #fff;
+  border: 1px solid white;
+  border-radius: 15px;
+  margin: 25px;
+  padding: 15px 30px;
+}

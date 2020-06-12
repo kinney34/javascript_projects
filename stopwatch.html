@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Stopwatch</title>
+  <link rel="stylesheet" href="stopwatch_style.css"/>
+</head>
+<body>
+  <div id="container">
+    <h1>VANILLA JAVASCRIPT STOPWATCH</h1>
+    <p><span id="seconds">00</span>:<span id="ms">00</span></p>
+    <button onclick="startFunc()">Start</button>
+    <button onclick="clearInterval(timer)">Stop</button>
+    <button onclick="reset()">Reset</button>
+  </div>
+  <script>
+      var timer;
+      function startFunc() {
+        timer = setInterval(updateTime, 10);
+      }
+
+      function updateTime() {
+        var ms = Number(document.getElementById("ms").innerHTML);
+        var sec = Number(document.getElementById("seconds").innerHTML);
+        ms++;
+        if (ms < 10) {
+          ms = '0' + ms;
+        }
+        if (ms == 60) {
+            sec++;
+            ms = '00';
+        }
+        if (sec < 10) {
+          sec = '0' + sec;
+        }
+        document.getElementById("ms").innerHTML = ms;
+        document.getElementById("seconds").innerHTML = sec;
+      }
+
+      function reset() {
+        document.getElementById("ms").innerHTML = '00';
+        document.getElementById("seconds").innerHTML = '00';
+      }
+  </script>
+</body>
+</html>

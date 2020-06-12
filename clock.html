@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Javascript Clock</title>
+  <link rel="stylesheet" href="clock_style.css"/>
+</head>
+<body onload="startClock()">
+  <h1 id="clock"></h1>
+  <script>
+    var time;
+    function startClock() {
+      time = setInterval(updateTime, 1000);
+    }
+
+    function updateTime() {
+      var d = new Date();
+      var meridian;
+      var hour = d.getHours();
+      var min = d.getMinutes();
+      var sec = d.getSeconds();
+      if (hour > 12) {
+        hour = hour % 12;
+        meridian = "PM";
+      } else {
+        meridian = "AM";
+      }
+      hour = formatTime(hour);
+      min = formatTime(min);
+      sec = formatTime(sec);
+      var result = hour + ":" + min + ":" + sec + meridian;
+      document.getElementById("clock").innerHTML = result;
+    }
+
+    function formatTime(num) {
+      if (num < 10) {
+        return "0" + num;
+      }
+      return num;
+    }
+  </script>
+</body>
+</html>
