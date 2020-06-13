@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+  <meta charset='utf-8'>
+  <title>Tip Calculator</title>
+  <link rel='stylesheet' href='tip_calculator_style.css'>
+</head>
+<body>
+  <div class='container'>
+    <h1>Javascript Tip Calculator</h1>
+
+    <div class='input-group'>
+      <label class='input-label' for='bill'>$</label>
+      <input type='text' id='billInput' name='bill' placeholder='Total bill'>
+    </div>
+    <br>
+
+    <div class='slider-group'>
+      <label for='slider'>Tip:</label>
+      <input type='range' id='tipSlider' name='slider' value='0'>
+      <label for='slider' id='slider-right'>0%</label>
+    </div>
+
+    <br>
+    <hr>
+    <h1>Results</h1>
+
+    <div class='input-group'>
+      <label class='input-label' for='tip-amt'>Tip amount</label>
+      <input type='text' id='tip-amt' name='tip-amt' readonly>
+    </div>
+
+    <div class='input-group'>
+      <label class='input-label' for='total'>Total bill with tip</label>
+      <input type='text' id='total' name='total' readonly>
+    </div>
+
+  </div>
+
+  <script src='tip_calculator.js'></script>
+</body>
+</html>

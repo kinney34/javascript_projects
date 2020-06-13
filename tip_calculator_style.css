@@ -1,0 +1,53 @@
+body {
+  text-align: center;
+  background-color: darkgray;
+}
+
+.container {
+  display: inline-block;
+  background-color: whitesmoke;
+  border-radius: 8px;
+  padding: 40px;
+}
+
+input[type=text] {
+  border: none;
+  background-color: whitesmoke;
+  padding: 12px;
+}
+
+.input-group {
+  display: inline-block;
+  border: 1px solid lightgray;
+  width: 90%;
+  text-align: left;
+  margin-bottom: 16px;
+  border-radius: 4px;
+  border-collapse: collapse;
+}
+
+.input-label {
+  background-color: lightgray;
+  padding: 10px 2px 11px;
+  border: 1px solid lightgray;
+  border-radius: 2px;
+  border-collapse: collapse;
+}
+
+.slider-group {
+  display: inline-block;
+  width: 90%;
+  text-align: left;
+}
+
+#slider-right {
+  width: 5%;
+  background-color: lightgray;
+  padding: 4px;
+  border: 1px solid gray;
+  border-radius: 0px 4px 4px 0px;
+}
+
+input[type=range] {
+  width: 80%;
+}
