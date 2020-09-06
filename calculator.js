@@ -39,6 +39,8 @@ function handleClick(e) {
         case '/':
           result = Number(previousNum) / Number(currentNum);
           break;
+        default:
+          result = currentNum;
       }
       display.innerHTML = result;
       console.log(result);
